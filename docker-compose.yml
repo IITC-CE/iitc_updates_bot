@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: iitc_updates_bot
+    restart: unless-stopped
+    build: ./app
+    ports:
+      - "4567:4567"
+    environment:
+      - LISTENER_HOST=0.0.0.0 # This is the default value
+      - LISTENER_PORT=4567 # This is the default value
+      - WEBHOOK_SECRET=secret
+      - TELEGRAM_TOKEN=123456789:blablabla
+      - TELEGRAM_CHAT_ID=-1001234567890
+      - TELEGRAM_TOPIC_ID=1234567890 # Optional
