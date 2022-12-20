@@ -6,7 +6,7 @@ import requests
 app = Flask(__name__)
 LISTENER_HOST = os.environ.get('HOST', '0.0.0.0')
 LISTENER_PORT = os.environ.get('PORT', '4567')
-WEBHOOK_SECRET = os.environ['SECRET']
+WEBHOOK_SECRET = os.environ['WEBHOOK_SECRET']
 TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
 TELEGRAM_CHAT_ID = os.environ['TELEGRAM_CHAT_ID']
 TELEGRAM_TOPIC_ID = os.environ.get('TELEGRAM_TOPIC_ID', None)

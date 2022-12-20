@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 services:
   app:
@@ -13,4 +13,4 @@ services:
       - WEBHOOK_SECRET=secret
       - TELEGRAM_TOKEN=123456789:blablabla
       - TELEGRAM_CHAT_ID=-1001234567890
-      - TELEGRAM_TOPIC_ID=1234567890 # Optional
+#      - TELEGRAM_TOPIC_ID=1234567890 # Optional
