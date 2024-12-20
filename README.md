@@ -6,6 +6,6 @@ Install from GitHub Registry:
 
 `docker pull ghcr.io/iitc-ce/iitc_updates_bot:master`
 
-docker-compose:
+`wget https://github.com/IITC-CE/iitc_updates_bot/raw/refs/heads/master/docker-compose.yml`
 
-`image: ghcr.io/iitc-ce/iitc_updates_bot:master`
+`docker compose up -d`
